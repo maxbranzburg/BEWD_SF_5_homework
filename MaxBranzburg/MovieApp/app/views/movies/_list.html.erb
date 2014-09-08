@@ -1,0 +1,12 @@
+<% @movies.each do |movie| %>
+  <section>
+    <header>
+      (<b><%= movie.year_released %></b>)
+      <%= link_to movie.title, movie %>
+    </header>
+    <%= movie.description %>
+    <br/>
+    <em>Rating:</em> <%= movie.rating %>/5
+  </section>
+  <br/>
+<% end %>
